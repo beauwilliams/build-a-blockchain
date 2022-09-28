@@ -11,7 +11,11 @@ just install @nxrs/cargo
 #It will convert - into _ without telling you. Check workspace.json.
 nx generate @nxrs/cargo:app rust_blockchain
 nx build rust_blockchain
-nx run rust_blockchain
+
+put commands in justfile
+
+NOTE: I can't build cargo-watch from source due to dependency failing to build with brew aarch gcc-11
+For now we can use cargo binstall
 
 ```
 
