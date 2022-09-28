@@ -1,4 +1,21 @@
 
+## Diary
+
+```
+npx create-nx-workspace build-a-blockchain
+ls
+cd build-a-blockchain
+justinit
+just install @nxrs/cargo
+#NOTE: using - instead of _ in app name will cause error with nx.
+#It will convert - into _ without telling you. Check workspace.json.
+nx generate @nxrs/cargo:app rust_blockchain
+nx build rust_blockchain
+nx run rust_blockchain
+
+```
+
+
 
 # BuildABlockchain
 
